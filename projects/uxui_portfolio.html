@@ -27,6 +27,7 @@
     <script src="../../Portfolio/js/toggle.js"></script>
     <script src="../../Portfolio/js/side-nav.js"></script>
     <script src="../../Portfolio/js/slider.js"></script>
+    
         
     <!--Stylesheet-->
     <link href="../../Portfolio/css/normalize.css" type="text/css" rel="stylesheet">
@@ -51,23 +52,22 @@
         .section_des_right{
             padding:1.5% 1% 1% 1%;
             height:auto;
-            background-color:none;
             float:right;
             position:relative;
             overflow:hidden;
         }
 
-        .section_des_right img{
-            border-radius:5px;
-        }
-
         .research_img{
-            margin-top:2%;
+            margin-top:5.5%;
         }
 
         .responsive_devices img{
             width:50%;
             margin: 0 25%;
+        }
+
+        .wireframe_img img{
+            box-shadow: 3px 3px 3px 1px lightgrey;
         }
 
     </style> 
@@ -100,7 +100,7 @@
                         <div class="section_des_left"> After seeing how restricted my old Portfolio was I decided to redesign the whole thing so that it is compatible with any content I need to implement. I wanted the new design to be open space, responsive, and easy to use yet very dynamic with content.
                             My goal ultimate goal is to showcase the work that I do and have visitors understand my work. 
                         </div>
-                        <div class="section_des_right">IMAGE</div>
+                        <div class="section_des_right"><img src="../images/icons/computer-icon.png"></div>
                     </div>
                 </div><!--section_block ends-->
             </section>
@@ -206,11 +206,38 @@
             <section>
                 <div class="section_block grey_block">
                     <div class="border_span">
-                        <div class="block_1_title_div"><p class="block_1_title" style="width:50%;"><span class="bck_gradient">WIRE FRAMES/PROTOTYPE</span></p></div>
+                        <div class="block_1_title_div"><p class="block_1_title"><span class="bck_gradient">PROTOTYPE</span></p></div>
+                        
+                        <!--PROTOTYPE POP UP STARTS-->                      
+                        <ul>
+                            <li style="text-align:center;"><div class="column align_icon">
+                                <img class="prototype_icon" src="../images/icons/wireframe-icon.png" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+                            </div></li>
+                        </ul>
+                                <!--POP UP SLIDER CONTENT-->
+                                <div id="myModal" class="modal">
+                                    <span class="close cursor" onclick="closeModal()">&times;</span>
+                                    <div class="modal-content">
+                                
+                                    <div class="mySlides">
+                                        <!--<div class="numbertext">Car Meet</div>-->
+                                        <img src="https://janinebfernandez.github.io/Portfolio/images/projects/car_meet/Ads-CarMeet-zoom-gold.jpg" style="width:60%; margin-bottom:1%;">
+                                        <img src="https://janinebfernandez.github.io/Portfolio/images/projects/car_meet/Ads-CarMeet-zoom-blue.jpg" style="width:60%;">
+                                    </div>
+                                
+                                
+                                    <div class="caption-container">
+                                        <p id="caption"></p>
+                                    </div>
+                                </div><!--Modal-content ENDS-->
+                                </div><!--myModal ENDS-->
+
+                        <!--PROTOTYPER POP UP ENDS-->
+
                         <div class="three_blocks_container">
-                            <div class="block_sec_1"><img src="../images/portfolio/wireframe.jpg"></div> 
-                            <div class="block_sec_2"><img src="../images/portfolio/design-photoshop.jpg"><img src="../images/portfolio/design-photoshop-2.jpg"></div>    
-                            <div class="block_sec_3"><img src="../images/portfolio/design-final.png"><img src="../images/portfolio/design-code-1.jpg"></div>  
+                            <div class="block_sec_1 wireframe_img"><img src="../images/portfolio/wireframe.jpg"></div> 
+                            <div class="block_sec_2 wireframe_img"><img src="../images/portfolio/design-photoshop.jpg"><img src="../images/portfolio/design-photoshop-2.jpg"></div>    
+                            <div class="block_sec_3 wireframe_img"><img src="../images/portfolio/design-final.png"><img src="../images/portfolio/design-code-1.jpg"></div>  
                         </div>
                         <div class="section_des_full">
                             <h3>Tools</h3>
@@ -237,9 +264,8 @@
                 <div class="section_block">
                     <div class="border_span">
                         <div class="block_1_title_div"><p class="block_1_title" style="width:25%;"><span class="bck_gradient">TEST</span></p></div>
-                        <div class="section_des">
-                            <div class="section_des_left">Having someone else look at your project with fresh eyes is very important. As the creator I knew whats on the pages, where everything is located, and how it behaves. Having someone else who knows nothing about the website helps me determine if there is anything I missed or if anything needs to be changed allowing room for improvement.</div>
-                            <div class="section_des_right">This is a sample content. Please advise.This is a sample content. Please advise.This is a sample content. Please advise.This is a sample content. Please advise.</div>
+                        <div class="section_des_full">
+                            <p style="font-size:18px;">Having someone else look at your project with fresh eyes is very important. As the creator I knew whats on the pages, where everything is located, and how it behaves. Having someone else who knows nothing about the website helps me determine if there is anything I missed or if anything needs to be changed allowing room for improvement.</p>
                         </div>
                         <div class="section_des_full responsive_devices">
                             <h3>Responsive Design</h3>
@@ -252,24 +278,32 @@
                             <div class="block_sec_1">
                                     <div class="persona_bio">
                                         <div class="bio_block">
-                                            <p><span class="persona_label">Feedback :</span>Wants an ecommerce website for her digital artwork. This website should be customized with lots of graphics and design to compliment her artwork. Because she has a wide array of artwork, she wants simplicity over anything.</p>
-                                            <p><span class="persona_label">Frustrations :</span>Due to the number of assets she produces each week, it is very difficult for her to stay organize and get the correct content where it needs to be.</p>
+                                            <img src="../images/icons/feedback-icon.png">
+                                            <p><span class="persona_label">Feedback :</span>
+                                                    <li>Easy to use and very organized</li>
+                                                    <li>Consistant theme throughout the site</li>
+                                                    <li>Image quality consistancy</li>
+                                                    <li>Responsiveness consistancy</li>
                                         </div>
                                     </div>
                                 </div> 
                                 <div class="block_sec_2">
                                     <div class="persona_bio">
                                         <div class="bio_block">
-                                            <p><span class="persona_label">Ideate :</span>Aside of being a Pharmacist, Pedro also likes to add custom art on his car.</p>
-                                            <p><span class="persona_label">Frustrations :</span>Since the art work is being placed on a behicle, it is very important that the piece is perfect. As you all know there is no such thing as perfect, so Pedro often changes his mind mid production.</p>
-                                        </div>
+                                            <img src="../images/icons/ideate-icon.png">
+                                            <span class="persona_label">Ideate :</span>
+                                                <li>Clearly list out components that needs to be modified making sure that changes (specially custom code) are properly made</li>
+                                                <li>Research web optimization for images and text</li>
+                                            </div>
                                     </div>   
                                 </div>    
                                 <div class="block_sec_3">
                                     <div class="persona_bio">
                                         <div class="bio_block">
-                                            <p><span class="persona_label">Modify :</span>Accomplish marketing with his gaming company online. In need of a digital content creator and a website manager.</p>
-                                            <p><span class="persona_label">Frustrations :</span> Running a business requires a lot of work and often operations and sales is valued more that anything that the creative department is left to the side. Jay's company needs to focus on the creative department and successfully promote the product. </p>
+                                            <img src="../images/icons/modify-icon.png">
+                                            <span class="persona_label">Modify :</span>
+                                                <li>Apply website optimization</li>
+                                                <li>Re-test website responsiveness</li>
                                         </div>
                                     </div>
                                 </div> 
@@ -281,9 +315,9 @@
             <section>
                 <div class="section_block grey_block">
                     <div class="border_span">
-                        <div class="block_1_title_div"><p class="block_1_title" style="width:25%;"><span class="bck_gradient">FINAL DESIGN</span></p></div>
-                        <div class="section_des_left">This is a sample content. Please advise.This is a sample content. Please advise.This is a sample content. Please advise.This is a sample content. Please advise.This is a sample content. Please advise.</div>
-                        <div class="section_des_right">This is a sample content. Please advise.This is a sample content. Please advise.This is a sample content. Please advise.This is a sample content. Please advise.</div>
+                        <div class="block_1_title_div"><p class="block_1_title" style="width:auto;"><span class="bck_gradient">FINAL DESIGN</span></p></div>
+                        <div class="section_des_left">Changes happen all the time specially in the design and tech industry. As my knowledge within this field expands I'm sure one day I'll decide to redesign my Portfolio again. Wether it be to accomodate more work samples or to simply apply a fresh new design. One thing that never changes is the process. Staying consistant and educating yourself is key for a successful website that clearly represents you.</div>
+                        <div class="section_des_right final_img"><img src="../images/portfolio/final-design.jpg"></div>
                     </div>
                 </div><!--section_block ends-->
             </section>
